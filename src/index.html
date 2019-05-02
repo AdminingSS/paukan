@@ -15,44 +15,105 @@
 
             <!--Header-->
             <header class="uk-navbar-container uk-position-relative">
-                <nav uk-navbar>
-                    <div class="uk-navbar-left">
+                <div class="uk-container">
+                    <nav uk-navbar>
+                        <div class="uk-navbar-left">
 
-                        <!--mobile menu toggle-->
-                        <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@l"
-                           uk-navbar-toggle-icon uk-toggle></a>
+                            <!--mobile menu toggle-->
+                            <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
+                               uk-navbar-toggle-icon uk-toggle></a>
 
-                        <!--logo-->
-                        <a class="uk-navbar-item uk-logo" href="/">
-                            <img src="images/logo.png" alt="">
-                        </a>
+                            <!--logo-->
+                            <a class="uk-navbar-item uk-logo" href="/">
+                                <img src="images/logo.png" alt="">
+                            </a>
 
-                        <!--navbar menu-->
-                        <ul class="uk-navbar-nav uk-visible@l">
-                            <li><a href="#">Home</a></li>
-                            <li>
-                                <a href="#">Platforms</a>
+                            <!--navbar menu-->
+                            <ul class="uk-navbar-nav uk-visible@m">
+                                <li><a href="#">Home</a></li>
+                                <li>
+                                    <a href="#" class="tm-drop-link">Platforms</a>
 
-                                <div class="uk-navbar-dropdown"
-                                     uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
-                                    <div class="uk-container">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav uk-column-1-4">
-                                            <li><a href="#"></a></li>
+                                    <div class="tm-dropdown uk-navbar-dropdown" uk-dropdown="mode: click;">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Steam</a></li>
+                                            <li><a href="#">Xbox live</a></li>
+                                            <li><a href="#">Origin</a></li>
+                                            <li><a href="#">Uplay</a></li>
+                                            <li><a href="#">Battle.net</a></li>
+                                            <li><a href="#">PlayStation</a></li>
+                                            <li><a href="#">Microsoft</a></li>
+                                            <li><a href="#">Nintendo</a></li>
+                                            <li><a href="#">Official website</a></li>
                                         </ul>
                                     </div>
-                                </div>
-                            </li>
-                            <li><a href="#">Abous us</a></li>
-                            <li><a href="#">Reviews</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
+                                </li>
+                                <li><a href="#">Abous us</a></li>
+                                <li><a href="#">Reviews</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
 
-                    </div>
+                        </div>
 
-                    <div class="uk-navbar-center uk-visible@l"></div>
+                        <div class="uk-navbar-right">
 
-                    <div class="uk-navbar-right"></div>
-                </nav>
+                            <!--navbar menu-->
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-visible@m"><a href="#">Sing in</a></li>
+                                <li class="uk-visible@m"><a href="#">Eng<small>(usd)</small></a></li>
+                                <li>
+                                    <a href="#" class="tm-cart tm-drop-link">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="tm-cart__count">23</span>
+                                    </a>
+
+                                    <div class="tm-dropdown tm-cart__dropdown uk-navbar-dropdown" uk-dropdown="mode: click; pos: bottom-right;">
+                                        <div class="tm-dropdown__header uk-flex uk-flex-center uk-flex-between">
+                                            <div>Recently added</div>
+                                            <div>
+                                                <a href="#" class="uk-link-reset">Remove all</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="tm-dropdown__content">
+                                            <ul class="tm-cart-list">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
+                                                            <div class="uk-width-auto">
+                                                                <div class="tm-cart-list__image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="uk-flex uk-flex-column uk-flex-between">
+                                                                <div class="uk-text-bold">Overwatch: Standard Edition</div>
+                                                                <div class="uk-text-small">35$</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="#" class="tm-cart-list__delete">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tm-dropdown__footer uk-flex uk-flex-center uk-flex-between">
+                                            <div>Subtotal: <span>105$</span></div>
+                                            <div>
+                                                <a href="#" class="tm-checkout">Go to checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
             </header>
 
             <!-- Section -->
@@ -61,6 +122,7 @@
 
                 </div>
             </div>
+
 
         </div>
 
