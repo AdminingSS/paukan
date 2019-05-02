@@ -1,0 +1,37 @@
+.tm-drop-link {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: '\f107';
+    right: 5px;
+    top: 20px;
+    font-size: 10px;
+  }
+}
+
+.tm-cart {
+  position: relative;
+
+  &__count {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 12px;
+    line-height: 16px;
+    background-color: @global-primary-background;
+    border-radius:50%;
+    font-size: 9px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.uk-navbar-nav > li > a.tm-cart {
+  padding-left: 20px;
+}

@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 
@@ -60,9 +61,18 @@
                             <!--navbar menu-->
                             <ul class="uk-navbar-nav">
                                 <li class="uk-visible@m"><a href="#">Sing in</a></li>
-                                <li class="uk-visible@m"><a href="#">Eng<small>(usd)</small></a></li>
+                                <li class="uk-visible@m">
+                                    <a href="#" class="tm-drop-link">Eng<small>(usd)</small></a>
+                                    <div class="tm-dropdown uk-navbar-dropdown" uk-dropdown="mode: click;">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#">Eng<small>(usd)</small></a></li>
+                                            <li><a href="#">Rus<small>(rub)</small></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
                                 <li>
-                                    <a href="#" class="tm-cart tm-drop-link">
+                                    <a href="#" class="tm-cart">
                                         <i class="fas fa-shopping-cart"></i>
                                         <span class="tm-cart__count">23</span>
                                     </a>
@@ -82,7 +92,49 @@
                                                         <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
                                                             <div class="uk-width-auto">
                                                                 <div class="tm-cart-list__image">
-                                                                    <img src="" alt="">
+                                                                    <img src="images/sm_1.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="uk-flex uk-flex-column uk-flex-between">
+                                                                <div class="uk-text-bold">Overwatch: Standard Edition</div>
+                                                                <div class="uk-text-small">35$</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="#" class="tm-cart-list__delete">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
+                                                            <div class="uk-width-auto">
+                                                                <div class="tm-cart-list__image">
+                                                                    <img src="images/sm_2.jpg" alt="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="uk-flex uk-flex-column uk-flex-between">
+                                                                <div class="uk-text-bold">Overwatch: Standard Edition</div>
+                                                                <div class="uk-text-small">35$</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="#" class="tm-cart-list__delete">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
+                                                            <div class="uk-width-auto">
+                                                                <div class="tm-cart-list__image">
+                                                                    <img src="images/sm_3.jpg" alt="">
                                                                 </div>
                                                             </div>
 
