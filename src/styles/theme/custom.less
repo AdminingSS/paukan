@@ -12,6 +12,7 @@
   }
 
   .uk-iconnav {
+    margin-left: -20px;
 
     > * {
       padding-left: 20px;
@@ -81,12 +82,97 @@
     color: #fff;
     text-align: center;
   }
-
-  &:hover {
-
-  }
 }
 
 .uk-navbar-nav > li > a.tm-cart {
   padding-left: 20px;
+}
+
+.tm-slider-pageheader {
+
+  .uk-button {
+    min-width: 185px;
+    font-size: 17px;
+  }
+
+  .uk-overlay {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 959px) {
+
+  .tm-slider-pageheader {
+
+    img {
+      max-width: none;
+      height: 160px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .uk-active {
+      z-index: 1;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .tm-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .tm-slider-pageheader {
+
+    .uk-slidenav {
+      margin-top: 52px / 2;
+    }
+
+    .uk-slidenav-next {
+      right: calc((100vw - 1220px) / 2);
+    }
+
+    .uk-slidenav-previous {
+      left: calc((100vw - 1220px) / 2);
+    }
+
+    .uk-overlay {
+      padding: 30px 50px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+
+  .tm-slider-pageheader {
+
+    .uk-overlay {
+      padding: 40px 50px;
+    }
+  }
+}
+
+.tm-platforms {
+  background: radial-gradient(circle at center, #0a5b9e 0%, #002455 100%) #002455;
+  border-bottom: 1px solid #345174;
+  border-top: 1px solid #345174;
+}
+
+.tm-platform-icons {
+  margin-left: -20px;
+
+  > * {
+    padding-left: 20px;
+  }
+
+  a {
+    width: 34px;
+  }
 }

@@ -13,248 +13,307 @@
 <div class="uk-offcanvas-content">
     <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
         <div>
+            <!-- Section -->
+            <div class="uk-section uk-padding-remove uk-position-relative">
+                <!--Header-->
+                <header class="tm-header uk-navbar-container">
+                    <div class="uk-container">
+                        <nav uk-navbar>
+                            <div class="uk-navbar-left">
 
-            <!--Header-->
-            <header class="uk-navbar-container uk-position-relative">
-                <div class="uk-container">
-                    <nav uk-navbar>
-                        <div class="uk-navbar-left">
+                                <!--mobile menu toggle-->
+                                <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
+                                   uk-navbar-toggle-icon uk-toggle></a>
 
-                            <!--mobile menu toggle-->
-                            <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
-                               uk-navbar-toggle-icon uk-toggle></a>
+                                <!--logo-->
+                                <a class="uk-navbar-item uk-logo  uk-visible@m" href="/">
+                                    <img src="images/logo.png" alt="">
+                                </a>
 
-                            <!--logo-->
-                            <a class="uk-navbar-item uk-logo" href="/">
-                                <img src="images/logo.png" alt="">
-                            </a>
+                                <!--navbar menu-->
+                                <ul class="uk-navbar-nav uk-visible@m">
+                                    <li><a href="#">Home</a></li>
+                                    <li>
+                                        <a href="#" class="tm-drop-link">Platforms</a>
 
-                            <!--navbar menu-->
-                            <ul class="uk-navbar-nav uk-visible@m">
-                                <li><a href="#">Home</a></li>
-                                <li>
-                                    <a href="#" class="tm-drop-link">Platforms</a>
-
-                                    <div class="tm-dropdown uk-navbar-dropdown" uk-dropdown="mode: click;">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li><a href="#">Steam</a></li>
-                                            <li><a href="#">Xbox live</a></li>
-                                            <li><a href="#">Origin</a></li>
-                                            <li><a href="#">Uplay</a></li>
-                                            <li><a href="#">Battle.net</a></li>
-                                            <li><a href="#">PlayStation</a></li>
-                                            <li><a href="#">Microsoft</a></li>
-                                            <li><a href="#">Nintendo</a></li>
-                                            <li><a href="#">Official website</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a href="#">Abous us</a></li>
-                                <li><a href="#">Reviews</a></li>
-                                <li><a href="#">Support</a></li>
-                            </ul>
-
-                        </div>
-
-                        <div class="uk-navbar-right">
-
-                            <!--navbar menu-->
-                            <ul class="uk-navbar-nav">
-                                <li class="uk-visible@m">
-                                    <a href="#modal-log-in" uk-toggle>Sing in</a>
-                                </li>
-                                <li class="uk-visible@m">
-                                    <a href="#modal-lang" class="tm-drop-link" uk-toggle>Eng<small>(usd)</small></a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="tm-cart">
-                                        <i class="fas fa-shopping-cart"></i>
-                                        <span class="tm-cart__count">23</span>
-                                    </a>
-
-                                    <div class="tm-dropdown tm-cart__dropdown uk-navbar-dropdown" uk-dropdown="mode: click; pos: bottom-right;">
-                                        <div class="tm-dropdown__header uk-flex uk-flex-center uk-flex-between">
-                                            <div>Recently added</div>
-                                            <div>
-                                                <a href="#" class="uk-link-reset">Remove all</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="tm-dropdown__content">
-                                            <ul class="tm-cart-list">
-                                                <li>
-                                                    <a href="#">
-                                                        <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
-                                                            <div class="uk-width-auto">
-                                                                <div class="tm-cart-list__image">
-                                                                    <img src="images/sm_1.jpg" alt="">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="uk-flex uk-flex-column uk-flex-between">
-                                                                <div class="uk-text-bold">Overwatch: Standard Edition</div>
-                                                                <div class="uk-text-small">35$</div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-
-                                                    <a href="#" class="tm-cart-list__delete">
-                                                        <i class="fas fa-trash"></i>
-                                                    </a>
-
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
-                                                            <div class="uk-width-auto">
-                                                                <div class="tm-cart-list__image">
-                                                                    <img src="images/sm_2.jpg" alt="">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="uk-flex uk-flex-column uk-flex-between">
-                                                                <div class="uk-text-bold">Overwatch: Standard Edition</div>
-                                                                <div class="uk-text-small">35$</div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-
-                                                    <a href="#" class="tm-cart-list__delete">
-                                                        <i class="fas fa-trash"></i>
-                                                    </a>
-
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
-                                                            <div class="uk-width-auto">
-                                                                <div class="tm-cart-list__image">
-                                                                    <img src="images/sm_3.jpg" alt="">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="uk-flex uk-flex-column uk-flex-between">
-                                                                <div class="uk-text-bold">Overwatch: Standard Edition</div>
-                                                                <div class="uk-text-small">35$</div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-
-                                                    <a href="#" class="tm-cart-list__delete">
-                                                        <i class="fas fa-trash"></i>
-                                                    </a>
-
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
-                                                            <div class="uk-width-auto">
-                                                                <div class="tm-cart-list__image">
-                                                                    <img src="images/sm_4.jpg" alt="">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="uk-flex uk-flex-column uk-flex-between">
-                                                                <div class="uk-text-bold">Overwatch: Standard Edition</div>
-                                                                <div class="uk-text-small">35$</div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-
-                                                    <a href="#" class="tm-cart-list__delete">
-                                                        <i class="fas fa-trash"></i>
-                                                    </a>
-
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
-                                                            <div class="uk-width-auto">
-                                                                <div class="tm-cart-list__image">
-                                                                    <img src="images/sm_5.jpg" alt="">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="uk-flex uk-flex-column uk-flex-between">
-                                                                <div class="uk-text-bold">Overwatch: Standard Edition</div>
-                                                                <div class="uk-text-small">35$</div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-
-                                                    <a href="#" class="tm-cart-list__delete">
-                                                        <i class="fas fa-trash"></i>
-                                                    </a>
-
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
-                                                            <div class="uk-width-auto">
-                                                                <div class="tm-cart-list__image">
-                                                                    <img src="images/sm_6.jpg" alt="">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="uk-flex uk-flex-column uk-flex-between">
-                                                                <div class="uk-text-bold">Overwatch: Standard Edition</div>
-                                                                <div class="uk-text-small">35$</div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-
-                                                    <a href="#" class="tm-cart-list__delete">
-                                                        <i class="fas fa-trash"></i>
-                                                    </a>
-
-                                                </li>
+                                        <div class="tm-dropdown uk-navbar-dropdown" uk-dropdown="mode: click;">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">Steam</a></li>
+                                                <li><a href="#">Xbox live</a></li>
+                                                <li><a href="#">Origin</a></li>
+                                                <li><a href="#">Uplay</a></li>
+                                                <li><a href="#">Battle.net</a></li>
+                                                <li><a href="#">PlayStation</a></li>
+                                                <li><a href="#">Microsoft</a></li>
+                                                <li><a href="#">Nintendo</a></li>
+                                                <li><a href="#">Official website</a></li>
                                             </ul>
                                         </div>
+                                    </li>
+                                    <li><a href="#">Abous us</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                    <li><a href="#">Support</a></li>
+                                </ul>
 
-                                        <div class="tm-dropdown__footer uk-flex uk-flex-center uk-flex-between">
-                                            <div>Subtotal: <span>105$</span></div>
-                                            <div>
-                                                <a href="#" class="tm-checkout">Go to checkout</a>
+                            </div>
+
+                            <div class="uk-navbar-right">
+
+                                <!--navbar menu-->
+                                <ul class="uk-navbar-nav">
+                                    <li class="uk-visible@m">
+                                        <a href="#modal-log-in" uk-toggle>Sing in</a>
+                                    </li>
+                                    <li class="uk-visible@m">
+                                        <a href="#modal-lang" class="tm-drop-link" uk-toggle>Eng<small>(usd)</small></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="tm-cart">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="tm-cart__count">23</span>
+                                        </a>
+
+                                        <div class="tm-dropdown tm-cart__dropdown uk-navbar-dropdown" uk-dropdown="mode: click; pos: bottom-right;">
+                                            <div class="tm-dropdown__header uk-flex uk-flex-center uk-flex-between">
+                                                <div>Recently added</div>
+                                                <div>
+                                                    <a href="#" class="uk-link-reset">Remove all</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm-dropdown__content">
+                                                <ul class="tm-cart-list">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
+                                                                <div class="uk-width-auto">
+                                                                    <div class="tm-cart-list__image">
+                                                                        <img src="images/sm_1.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="uk-flex uk-flex-column uk-flex-between">
+                                                                    <div class="uk-text-bold">Overwatch: Standard Edition</div>
+                                                                    <div class="uk-text-small">35$</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="#" class="tm-cart-list__delete">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
+                                                                <div class="uk-width-auto">
+                                                                    <div class="tm-cart-list__image">
+                                                                        <img src="images/sm_2.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="uk-flex uk-flex-column uk-flex-between">
+                                                                    <div class="uk-text-bold">Overwatch: Standard Edition</div>
+                                                                    <div class="uk-text-small">35$</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="#" class="tm-cart-list__delete">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
+                                                                <div class="uk-width-auto">
+                                                                    <div class="tm-cart-list__image">
+                                                                        <img src="images/sm_3.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="uk-flex uk-flex-column uk-flex-between">
+                                                                    <div class="uk-text-bold">Overwatch: Standard Edition</div>
+                                                                    <div class="uk-text-small">35$</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="#" class="tm-cart-list__delete">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
+                                                                <div class="uk-width-auto">
+                                                                    <div class="tm-cart-list__image">
+                                                                        <img src="images/sm_4.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="uk-flex uk-flex-column uk-flex-between">
+                                                                    <div class="uk-text-bold">Overwatch: Standard Edition</div>
+                                                                    <div class="uk-text-small">35$</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="#" class="tm-cart-list__delete">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
+                                                                <div class="uk-width-auto">
+                                                                    <div class="tm-cart-list__image">
+                                                                        <img src="images/sm_5.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="uk-flex uk-flex-column uk-flex-between">
+                                                                    <div class="uk-text-bold">Overwatch: Standard Edition</div>
+                                                                    <div class="uk-text-small">35$</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="#" class="tm-cart-list__delete">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="uk-child-width-expand uk-grid uk-grid-small" uk-grid>
+                                                                <div class="uk-width-auto">
+                                                                    <div class="tm-cart-list__image">
+                                                                        <img src="images/sm_6.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="uk-flex uk-flex-column uk-flex-between">
+                                                                    <div class="uk-text-bold">Overwatch: Standard Edition</div>
+                                                                    <div class="uk-text-small">35$</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="#" class="tm-cart-list__delete">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="tm-dropdown__footer uk-flex uk-flex-center uk-flex-between">
+                                                <div>Subtotal: <span>105$</span></div>
+                                                <div>
+                                                    <a href="#" class="tm-checkout">Go to checkout</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
 
-                        </div>
-                    </nav>
-                </div>
-            </header>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
 
-            <!-- Section -->
-            <div class="uk-section uk-padding-remove">
-                <div class="uk-position-relative" tabindex="-1" uk-slideshow>
+                <div class="tm-slider-pageheader uk-position-relative" tabindex="-1" uk-slider>
 
-                    <ul class="uk-slideshow-items">
+                    <ul class="uk-slider-items uk-child-width-1-1">
                         <li>
                             <img src="images/slider.png" alt="">
-                            <div class="uk-overlay uk-position-bottom">
-                                <a href="#" class="uk-button uk-button-primary">Get now</a>
+                            <div class="uk-container">
+                                <div class="uk-position-relative">
+                                    <div class="uk-overlay uk-position-bottom">
+                                        <a href="#" class="uk-button uk-button-primary">Get now</a>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li>
                             <img src="images/slider.png" alt="">
-                            <div class="uk-overlay uk-position-bottom">
-                                <a href="#" class="uk-button uk-button-primary">Get now</a>
+                            <div class="uk-container">
+                                <div class="uk-position-relative">
+                                    <div class="uk-overlay uk-position-bottom">
+                                        <a href="#" class="uk-button uk-button-primary">Get now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/slider.png" alt="">
+                            <div class="uk-container">
+                                <div class="uk-position-relative">
+                                    <div class="uk-overlay uk-position-bottom">
+                                        <a href="#" class="uk-button uk-button-primary">Get now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/slider.png" alt="">
+                            <div class="uk-container">
+                                <div class="uk-position-relative">
+                                    <div class="uk-overlay uk-position-bottom">
+                                        <a href="#" class="uk-button uk-button-primary">Get now</a>
+                                    </div>
+                                </div>
                             </div>
                         </li>
 
                     </ul>
 
-                    <div class="uk-container">
-                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-                    </div>
+                    <a class="uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
                 </div>
             </div>
 
+            <!-- Section -->
+            <div class="tm-platforms uk-section uk-section-xsmall">
+                <div class="uk-container">
+                    <div class="uk-grid uk-flex-middle uk-flex-between" uk-grid>
+                        <div>
+                            <div class="uk-grid uk-flex-middle" uk-grid>
+                                <div>
+                                    <div class="tm-title">Platforms</div>
+                                </div>
+                                <div>
+                                    <ul class="tm-platform-icons uk-iconnav">
+                                        <li><a href="#"><img src="images/platforms/origin.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="images/platforms/sony_p.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="images/platforms/xbox.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="images/platforms/steam.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="images/platforms/nintendo.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="images/platforms/uplay.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="images/platforms/blizzard.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="images/platforms/microsoft.svg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tm-search">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon uk-form-icon-flip"><i class="fas fa-search"></i></span>
+                                    <input class="uk-input" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Section -->
             <div class="uk-section">
@@ -272,16 +331,6 @@
                     <img src="images/svg_icons/Categories/c_search.svg" alt="">
                     <img src="images/svg_icons/Categories/c_star.svg" alt="">
                     <img src="images/svg_icons/Categories/c_world.svg" alt="">
-
-                    <h3>Platforms</h3>
-                    <img src="images/svg_icons/Platforms/blizzard.svg" alt="">
-                    <img src="images/svg_icons/Platforms/microsoft.svg" alt="">
-                    <img src="images/svg_icons/Platforms/nintendo.svg" alt="">
-                    <img src="images/svg_icons/Platforms/origin.svg" alt="">
-                    <img src="images/svg_icons/Platforms/sony_p.svg" alt="">
-                    <img src="images/svg_icons/Platforms/steam.svg" alt="">
-                    <img src="images/svg_icons/Platforms/uplay.svg" alt="">
-                    <img src="images/svg_icons/Platforms/xbox.svg" alt="">
 
                     <h3>Social_footer</h3>
                     <img src="images/svg_icons/Social_footer/facebook.svg" alt="">
