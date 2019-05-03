@@ -3,11 +3,11 @@ import 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min'
 import 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css';
 
 $(()=>{
-    //simple select
+    //scroll
     (() => {
-        const $mSCB_1 = $('.tm-dropdown__content');
+        const $scrollContainer = $('.js-scroll');
 
-        $mSCB_1.mCustomScrollbar({
+        $scrollContainer.mCustomScrollbar({
             mouseWheel:{ enable: true }
         });
     })();
