@@ -12,13 +12,13 @@
 @form-padding-horizontal:                       10px;
 @form-padding-vertical:                         4px;
 
-@form-background:                               @global-muted-background;
-@form-color:                                    @global-color;
+@form-background:                               @global-background;
+@form-color:                                    #757575;
 
-@form-focus-background:                         @global-muted-background;
-@form-focus-color:                              @global-color;
+@form-focus-background:                         @global-background;
+@form-focus-color:                              #757575;
 
-@form-disabled-background:                      @global-muted-background;
+@form-disabled-background:                      #ccc;
 @form-disabled-color:                           @global-muted-color;
 
 @form-placeholder-color:                        @global-muted-color;
@@ -31,7 +31,7 @@
 @form-large-height:                             @global-control-large-height;
 @form-large-padding-horizontal:                 12px;
 @form-large-line-height:                        @form-large-height;
-@form-large-font-size:                          @global-medium-font-size;
+@form-large-font-size:                          14px;
 
 @form-danger-color:                             @global-danger-background;
 @form-success-color:                            @global-success-background;
@@ -46,16 +46,16 @@
 @form-select-option-color:                      #444;
 @form-select-disabled-icon-color:               @global-muted-color;
 
-@form-radio-size:                               16px;
-@form-radio-margin-top:                         -4px;
+@form-radio-size:                               12px;
+@form-radio-margin-top:                         -2px;
 @form-radio-background:                         darken(@global-muted-background, 5%);
 
-@form-radio-checked-background:                 @global-primary-background;
-@form-radio-checked-icon-color:                 @global-inverse-color;
+@form-radio-checked-background:                 @global-background;
+@form-radio-checked-icon-color:                 #008ecc;
 
-@form-radio-checked-focus-background:           darken(@global-primary-background, 10%);
+@form-radio-checked-focus-background:           @global-background;
 
-@form-radio-disabled-background:                @global-muted-background;
+@form-radio-disabled-background:                @form-disabled-background;
 @form-radio-disabled-icon-color:                @global-muted-color;
 
 @form-legend-font-size:                         @global-large-font-size;
@@ -69,8 +69,8 @@
 @form-horizontal-controls-text-padding-top:     7px;
 
 @form-icon-width:                               @form-height;
-@form-icon-color:                               @global-muted-color;
-@form-icon-hover-color:                         @global-color;
+@form-icon-color:                               #757575;
+@form-icon-hover-color:                         @global-inverse-color;
 
 @internal-form-select-image:                     "../../images/backgrounds/form-select.svg";
 @internal-form-radio-image:                      "../../images/backgrounds/form-radio.svg";
@@ -83,7 +83,7 @@
 //
 
 @form-border-width:                             @global-border-width;
-@form-border:                                   @global-border;
+@form-border:                                   #c9c9c9;
 
 @form-focus-border:                             @global-primary-background;
 
@@ -96,16 +96,16 @@
 @form-blank-focus-border-style:                 dashed;
 
 @form-radio-border-width:                       @global-border-width;
-@form-radio-border:                             darken(@global-border, 10%);
+@form-radio-border:                             #008ecc;
 
 @form-radio-focus-border:                       @global-primary-background;
 
-@form-radio-checked-border:                     transparent;
+@form-radio-checked-border:                     #008ecc;
 
-@form-radio-disabled-border:                    @global-border;
+@form-radio-disabled-border:                    #ccc;
 
-@form-label-color:                              @global-emphasis-color;
-@form-label-font-size:                          @global-small-font-size;
+@form-label-color:                              #008ecc;
+@form-label-font-size:                          10px;
 
 
 // Component
@@ -145,6 +145,7 @@
 // ========================================================================
 
 .hook-form-radio() {
+    background-size: contain;
     border: @form-radio-border-width solid @form-radio-border;
     transition: 0.2s ease-in-out;
     transition-property: background-color, border;
