@@ -79,6 +79,23 @@
   }
 }
 
+.tm-font-proxima {
+  font-family: @font-family-proxima;
+}
+
+.tm-font-informa {
+  font-family: @font-family-informa;
+}
+
+.tm-text-small {
+  font-size: 14px;
+}
+
+.tm-list-bullet {
+  padding: 0;
+  list-style: none;
+}
+
 .tm-offcanvas__nav {
   width: 150px;
 
@@ -847,10 +864,20 @@
 // Product page
 
 .tm-product-page {
+  line-height: 1.2;
+  color: #dfdcdc;
   background: url("/images/bg-swb.jpg") no-repeat center top #000;
+
+  h1 {
+    font-family: @font-family-informa;
+  }
 
   .uk-navbar-container:not(.uk-navbar-transparent) {
     background: rgba(20, 25, 34, 0.8);
+  }
+
+  .uk-button {
+    min-width: 210px;
   }
 
   .tm-header {
@@ -864,3 +891,7 @@
     background-position: right top;
   }
 }
+
+
+
+
