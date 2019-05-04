@@ -292,6 +292,50 @@
   }
 }
 
+.tm-search-filter {
+  padding: 20px 15px 10px;
+  margin-bottom: 15px;
+  background: #002855;
+
+  .uk-button {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid #264c71;
+    color: #acbccc;
+    font-size: 16px;
+  }
+
+  .tm-search-button {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    line-height: 32px;
+    padding: 0 25px 0 10px;
+
+    &::before {
+      position: absolute;
+      display: block;
+
+      top: 0;
+      right: 10px;
+
+      font-family: "Font Awesome 5 Free";
+      font-weight: 700;
+      font-size: 16px;
+      content: '\f107';
+    }
+
+    &.uk-open::before {
+      content: '\f106';
+    }
+  }
+
+  .tm-reset-button {
+    line-height: 28px;
+    padding: 0 15px 0 25px;
+    color: #9aaec2;
+  }
+}
+
 @media (max-width: 959px) {
 
   .tm-slider-pageheader {
