@@ -439,41 +439,44 @@
                     </h2>
 
                     <div class="tm-search-filter">
-                        <div class="uk-child-width-1-4 uk-margin" uk-grid>
-                            <div>
-                                <div class="">
-                                    <button class="tm-search-button uk-button" type="button">Categories...</button>
-                                    <div uk-dropdown="mode: click; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                        <div class="tm-search-dropdown-holder uk-position-relative">
+                            <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-margin" uk-grid>
+                                <div>
+                                    <div class="">
+                                        <button class="tm-search-button uk-button" type="button">Categories...</button>
+                                        <div class="uk-width-1-1" uk-dropdown="mode: click; flip: false; boundary: .tm-search-dropdown-holder">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="">
-                                    <button class="tm-search-button uk-button" type="button">Genres...</button>
-                                    <div uk-dropdown="mode: click; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                <div>
+                                    <div class="">
+                                        <button class="tm-search-button uk-button" type="button">Genres...</button>
+                                        <div class="uk-width-1-1" uk-dropdown="mode: click; flip: false; boundary: .tm-search-dropdown-holder">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="">
-                                    <button class="tm-search-button uk-button" type="button">Platforms...</button>
-                                    <div uk-dropdown="mode: click; flip: false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                <div>
+                                    <div class="">
+                                        <button class="tm-search-button uk-button" type="button">Platforms...</button>
+                                        <div class="uk-width-1-1" uk-dropdown="mode: click; flip: false; boundary: .tm-search-dropdown-holder">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="uk-inline uk-width-1-1">
-                                    <button class="tm-search-button uk-button" type="button">Sort by...</button>
-                                    <div uk-dropdown="mode: click; flip: false">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li><a href="#">Bestselling</a></li>
-                                            <li><a href="#">Newest</a></li>
-                                            <li><a href="#">Price-lowest</a></li>
-                                            <li><a href="#">Price-highest</a></li>
-                                            <li><a href="#">Name A-Z</a></li>
-                                            <li><a href="#">Name Z-A</a></li>
-                                        </ul>
+                                <div>
+                                    <div class="uk-inline uk-width-1-1">
+                                        <button class="tm-search-button uk-button" type="button">Sort by...</button>
+                                        <div uk-dropdown="mode: click; flip: false; pos: bottom-justify">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="#">Bestselling</a></li>
+                                                <li><a href="#">Newest</a></li>
+                                                <li><a href="#">Price-lowest</a></li>
+                                                <li><a href="#">Price-highest</a></li>
+                                                <li><a href="#">Name A-Z</a></li>
+                                                <li><a href="#">Name Z-A</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="uk-flex uk-flex-between uk-flex-bottom uk-width-1-1">
                             <button class="tm-reset-button uk-button">Reset filter <span class="uk-margin-small-left">X</span></button>
                             <div>
