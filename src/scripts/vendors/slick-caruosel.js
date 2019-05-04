@@ -9,11 +9,12 @@ $(() => {
         const $body = $('body');
         const $window = $(window);
         const options = {
-            slidesToShow: 1,
-            slidesToScroll: 1,
             infinite: false,
             arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             focusOnSelect: true,
+            variableWidth: true,
         };
         let sliderCreated = false;
 
