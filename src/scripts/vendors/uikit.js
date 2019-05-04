@@ -17,6 +17,7 @@ $(() => {
             $target.on({
                 'shown': function () {
                     $toggler.addClass(activeClassName);
+                    // debugger;
                 },
                 'hidden': function () {
                     $toggler.removeClass(activeClassName);

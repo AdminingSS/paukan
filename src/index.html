@@ -285,8 +285,8 @@
 
                     </ul>
 
-                    <a class="uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                    <a class="uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    <a class="uk-position-center-left uk-slidenav-previous uk-slidenav" href="#" uk-slider-item="previous"><i class="fas fa-angle-left"></i></a>
+                    <a class="uk-position-center-right uk-slidenav-next uk-slidenav" href="#" uk-slider-item="next"><i class="fas fa-angle-right"></i></a>
 
                 </div>
             </div>
@@ -874,24 +874,22 @@
             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
             <div class="uk-card uk-flex uk-flex-center">
-                <ul class="uk-nav">
+                <ul class="tm-offcanvas__nav uk-nav">
                     <li><a href="#">Home</a></li>
                     <li>
-                        <a href="#" class="tm-drop-link">Platforms</a>
+                        <a href="#" class="tm-drop-link" uk-toggle="target: #platforms-nav; animation: uk-animation-fade">Platforms</a>
 
-                        <div class="tm-dropdown uk-navbar-dropdown" uk-dropdown="mode: click;">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="#">Steam</a></li>
-                                <li><a href="#">Xbox live</a></li>
-                                <li><a href="#">Origin</a></li>
-                                <li><a href="#">Uplay</a></li>
-                                <li><a href="#">Battle.net</a></li>
-                                <li><a href="#">PlayStation</a></li>
-                                <li><a href="#">Microsoft</a></li>
-                                <li><a href="#">Nintendo</a></li>
-                                <li><a href="#">Official website</a></li>
-                            </ul>
-                        </div>
+                        <ul id="platforms-nav" class="uk-nav uk-margin-small-bottom" hidden>
+                            <li><a href="#">Steam</a></li>
+                            <li><a href="#">Xbox live</a></li>
+                            <li><a href="#">Origin</a></li>
+                            <li><a href="#">Uplay</a></li>
+                            <li><a href="#">Battle.net</a></li>
+                            <li><a href="#">PlayStation</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#">Nintendo</a></li>
+                            <li><a href="#">Official website</a></li>
+                        </ul>
                     </li>
                     <li><a href="#">Abous us</a></li>
                     <li><a href="#">Reviews</a></li>

@@ -55,6 +55,7 @@
 }
 
 .uk-offcanvas-bar {
+  padding-top: 52px;
   font-size: 11px;
   color: #cfcfcf;
 
@@ -65,10 +66,30 @@
       color: #fff;
     }
   }
+
+  .uk-close {
+
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+
+  .uk-nav .tm-drop-link {
+    padding-right: 15px;
+  }
+}
+
+.tm-offcanvas__nav {
+  width: 150px;
+
+  ul {
+    padding-left: 5px;
+  }
 }
 
 .tm-drop-link {
   position: relative;
+  padding-right: 15px;
 
   &::before {
     position: absolute;
@@ -77,7 +98,8 @@
     font-weight: 700;
     content: '\f107';
     right: 4px;
-    top: 22px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 10px;
   }
 }
@@ -269,7 +291,7 @@
 
     img {
       max-width: none;
-      height: 160px;
+      height: 195px;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
@@ -278,6 +300,21 @@
     .uk-active {
       z-index: 1;
       overflow: hidden;
+    }
+
+    .uk-button {
+      line-height: 28px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+
+  .tm-slider-pageheader {
+
+    img {
+      height: 160px;
     }
   }
 }
@@ -295,6 +332,7 @@
   .tm-slider-pageheader {
 
     .uk-slidenav {
+      font-size: 40px;
       margin-top: 52px / 2;
     }
 
@@ -357,8 +395,8 @@
 
   .uk-input {
     font-size: 14px;
-    background: linear-gradient(to right, #032a55 0%, #012045 70%) #012045;
     color: #fff;
+    background: rgba(0, 23, 50, 0.43);
     border-color: #223954;
   }
 
