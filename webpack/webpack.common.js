@@ -31,6 +31,12 @@ module.exports = {
             inject: "body",
         }),
         new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/search.html'),
+            filename: "search.html",
+            filename: "index.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/product.html'),
             filename: "product.html",
             inject: "body",
