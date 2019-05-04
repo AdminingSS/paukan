@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.less';
 $(() => {
     //slider
     (function () {
-        const $slider = $('.tm-slider-popular');
+        const $slider = $('.tm-slider-category');
         const $body = $('body');
         const $window = $(window);
         const options = {
@@ -14,7 +14,6 @@ $(() => {
             infinite: false,
             arrows: false,
             focusOnSelect: true,
-            variableWidth: true,
         };
         let sliderCreated = false;
 
