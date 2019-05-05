@@ -440,23 +440,341 @@
 
                     <div class="tm-search-filter">
                         <div class="tm-search-dropdown-holder uk-position-relative">
-                            <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-margin" uk-grid>
+                            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-margin" uk-grid="margin: uk-grid-margin-small">
                                 <div>
                                     <div class="">
                                         <button class="tm-search-button uk-button" type="button">Categories...</button>
-                                        <div class="uk-width-1-1" uk-dropdown="mode: click; flip: false; boundary: .tm-search-dropdown-holder; boundary-align: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                        <div class="tm-dropdown-alt uk-width-1-1" uk-dropdown="mode: click; flip: false; boundary: .tm-search-dropdown-holder; boundary-align: true">
+                                            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-margin" uk-grid="margin: uk-grid-margin-small">
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Most Popular</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Latest Additions</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>On Sale</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Most Wanted</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="uk-flex uk-flex-between uk-flex-bottom uk-flex-wrap uk-width-1-1">
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>All genres (select/deselect all)</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+
+                                                    <button class="tm-search-submit uk-button uk-button-primary">Apply</button>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="">
                                         <button class="tm-search-button uk-button" type="button">Genres...</button>
-                                        <div class="uk-width-1-1" uk-dropdown="mode: click; flip: false; boundary: .tm-search-dropdown-holder; boundary-align: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                        <div class="tm-dropdown-alt uk-width-1-1" uk-dropdown="mode: click; flip: false; boundary: .tm-search-dropdown-holder; boundary-align: true">
+                                            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-margin" uk-grid="margin: uk-grid-margin-small">
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Action</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Adventure</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Anime</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Casual</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Fighting</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Gift Card</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Horror</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Indie</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>MMO</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Multiplayer</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Puzzle</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Racing</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>RPG</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Shooter</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Simulation</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Software</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Sports</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Strategy</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Web Publishing</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="uk-flex uk-flex-between uk-flex-bottom uk-flex-wrap uk-width-1-1">
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>All genres (select/deselect all)</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+
+                                                    <button class="tm-search-submit uk-button uk-button-primary">Apply</button>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="">
                                         <button class="tm-search-button uk-button" type="button">Platforms...</button>
-                                        <div class="uk-width-1-1" uk-dropdown="mode: click; flip: false; boundary: .tm-search-dropdown-holder; boundary-align: true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                                        <div class="tm-dropdown-alt uk-width-1-1" uk-dropdown="mode: click; flip: false; boundary: .tm-search-dropdown-holder; boundary-align: true">
+                                            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-margin" uk-grid="margin: uk-grid-margin-small">
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Battle.net</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>GOG</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Google Play</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Itunes</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Microsoft</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Nintendo</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Origin</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>PlayStation</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Rockstar Social Club</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Steam</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Uplay</span>
+                                                        </label></li>
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Xbox live</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>Official website</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="uk-flex uk-flex-between uk-flex-bottom uk-flex-wrap uk-width-1-1">
+                                                <div>
+                                                    <ul class="tm-list-checkbox uk-nav uk-navbar-dropdown-nav">
+                                                        <li><label>
+                                                            <div>
+                                                                <input class="uk-checkbox" type="checkbox">
+                                                            </div>
+                                                            <span>All genres (select/deselect all)</span>
+                                                        </label></li>
+                                                    </ul>
+                                                </div>
+
+                                                    <button class="tm-search-submit uk-button uk-button-primary">Apply</button>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
@@ -478,8 +796,8 @@
                         </div>
 
                         <div class="uk-flex uk-flex-between uk-flex-bottom uk-width-1-1">
-                            <button class="tm-reset-button uk-button">Reset filter <span class="uk-margin-small-left">X</span></button>
-                            <div>
+                            <button class="tm-reset-button uk-button uk-width-1-1 uk-width-auto@s">Reset filter <span class="uk-margin-small-left">X</span></button>
+                            <div class="uk-width-auto uk-margin-small-left">
                                 <img src="images/boxxx.png" alt="">
                             </div>
                         </div>
