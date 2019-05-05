@@ -45,6 +45,11 @@ module.exports = {
             filename: "purchases.html",
             inject: "body",
         }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/cart.html'),
+            filename: "cart.html",
+            inject: "body",
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
