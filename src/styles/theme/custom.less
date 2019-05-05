@@ -382,10 +382,6 @@
   }
 }
 
-
-
-
-
 .tm-list-checkbox {
 
   li {
@@ -440,7 +436,111 @@
   }
 }
 
+.tm-purchases {
+  background: rgba(0, 23, 50, 0.3);
+  min-height: 250px;
+
+  .tm-purchase-hover {
+    button {
+      display: none;
+      line-height: 28px;
+      width: 50%;
+    }
+
+    &:hover {
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      span {
+        display: none;
+      }
+
+      button {
+        display: block;
+      }
+    }
+
+  }
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+
+    text-align: center;
+
+    tr:nth-child(even) {
+      background: rgba(0, 23, 50, 0.2);
+    }
+
+    th {
+      padding: 15px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    td {
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    tr:last-child {
+      td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    th, td {
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 959px) {
+
+  .tm-purchases {
+    overflow-x: auto;
+
+    table {
+      width: 960px;
+
+    }
+  }
+
+  .tm-slider-pageheader {
+
+    img {
+      max-width: none;
+      height: 195px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .uk-active {
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .uk-button {
+      line-height: 28px;
+      font-size: 16px;
+    }
+  }
+}
+
 @media (max-width: 639px) {
+
+  .tm-slider-pageheader {
+
+    img {
+      height: 160px;
+    }
+  }
+
   .tm-search-filter {
 
     .tm-search-submit {
@@ -471,40 +571,6 @@
         top: 1px;
         left: 1px;
       }
-    }
-  }
-}
-
-@media (max-width: 959px) {
-
-  .tm-slider-pageheader {
-
-    img {
-      max-width: none;
-      height: 195px;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .uk-active {
-      z-index: 1;
-      overflow: hidden;
-    }
-
-    .uk-button {
-      line-height: 28px;
-      font-size: 16px;
-    }
-  }
-}
-
-@media (max-width: 639px) {
-
-  .tm-slider-pageheader {
-
-    img {
-      height: 160px;
     }
   }
 }
