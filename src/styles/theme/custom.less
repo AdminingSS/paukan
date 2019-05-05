@@ -439,6 +439,7 @@
 .tm-purchases {
   background: rgba(0, 23, 50, 0.3);
   min-height: 250px;
+  overflow-x: auto;
 
   .tm-purchase-hover {
     button {
@@ -502,7 +503,7 @@
 @media (max-width: 959px) {
 
   .tm-purchases {
-    overflow-x: auto;
+    min-height: 0;
 
     table {
       width: 960px;
