@@ -1,5 +1,4 @@
-import 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar';
-import 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min'
+import '../vendors/jquery.mCustomScrollbar.concat.min'
 import 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css';
 
 var cx, dx = 0;
