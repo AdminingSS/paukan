@@ -1,3 +1,21 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .uk-modal {
   font-size: 13px;
   color: #757575;
@@ -846,15 +864,6 @@
   }
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 
 // Product page
 
@@ -875,8 +884,20 @@
     min-width: 210px;
   }
 
+  .uk-list {
+
+    > li:nth-child(n+2) {
+      margin-top: 0;
+    }
+  }
+
   .tm-header {
     position: relative;
+  }
+
+  .tm-radio {
+    font-size: 22px;
+    color: #fff;
   }
 }
 
@@ -884,6 +905,93 @@
 
   .tm-product-page {
     background-position: right top;
+  }
+}
+
+.tm-slider-gallery {
+
+  .uk-slidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+
+    &::after {
+      content: '\f00e';
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      font-family: "Font Awesome 5 Free";
+      font-size: 30px;
+      font-weight: 900;
+      background-color: rgba(0, 0, 0, 0.25);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      display: flex;
+    }
+  }
+}
+
+.tm-list-description {
+  color: #b7b9c6;
+}
+
+.tm-radio {
+  position: relative;
+  padding-left: 35px;
+
+  input {
+    display: none;
+  }
+
+  span {
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #585c62;
+    }
+
+    &::after {
+      display: none;
+      top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      background-color: #088bd0;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+  }
+
+  input:checked + span::after {
+    display: block;
   }
 }
 
