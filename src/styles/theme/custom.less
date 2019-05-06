@@ -635,6 +635,7 @@
 
   .tm-continue-shopping {
     font-size: 18px;
+    padding-left: 5px;
   }
 
   .tm-continue-shopping a:hover {
@@ -969,6 +970,12 @@
   color: rgba(92, 255, 239, 0.8);
   border-bottom: 1px solid rgba(117, 167, 162, 0.8);
 
+  .tm-continue-shopping {
+    position: absolute;
+    right: 0;
+    top: 2px;
+  }
+
   .image-wrap {
     width: 19px;
     margin-right: 5px;
@@ -1240,6 +1247,12 @@
 @media (max-width: 375px) {
   .tm-search {
     width: 275px;
+  }
+
+  .tm-title {
+    .tm-continue-shopping {
+      display: none;
+    }
   }
 }
 
