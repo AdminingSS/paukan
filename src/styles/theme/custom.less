@@ -602,6 +602,40 @@
     font-family: inherit;
     font-size: 100%;
   }
+
+  .tm-cart-summary {
+    background-color: rgba(255,255,255,0.08);
+    padding: 10px;
+    min-height: 250px;
+    margin-left: 5px;
+
+    .tm-cart-summary-header {
+      margin: 0 0 5px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tm-input-discount {
+      padding: 0 10px;
+      border: 1px solid @global-primary-background;
+      background: transparent; //rgba(0, 23, 50, 0.4);
+      color: #ffffff;
+
+      &::placeholder {
+        color: #6387a9;
+      }
+    }
+
+    .tm-button-apply {
+      padding: 0 10px;
+      line-height: 33px;
+      width: auto;
+      border-radius: 0 2px 2px 0;
+    }
+  }
+
+  .tm-continue-shopping {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 959px) {
