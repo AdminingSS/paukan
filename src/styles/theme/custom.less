@@ -643,56 +643,6 @@
   }
 }
 
-.tm-sellers-page {
-  background-color: rgba(0,23,50,0.3);
-
-  .tm-sellers-heading {
-    position: relative;
-    padding: 120px;
-    background-color: rgba(0,0,0,0.15);
-    //margin-bottom: 60px;
-
-    .tm-sellers-icon {
-      position: absolute;
-      left: calc(50% - 39px);
-      bottom: -39px;
-    }
-  }
-
-  .tm-sellers-content {
-    padding: 60px;
-
-    > *:first-child {
-      margin-bottom: 110px;
-    }
-  }
-
-  .uk-button {
-    line-height: 33px;
-    padding: 0 40px;
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 48px;
-    margin-bottom: 75px;
-  }
-
-  h3 {
-    font-size: 30px;
-  }
-
-  .tm-img-wrapper {
-    padding: 10px;
-    text-align: center;
-
-    img {
-      width: auto;
-
-    }
-  }
-}
-
 @media (max-width: 959px) {
 
   .tm-purchases {
@@ -740,41 +690,6 @@
 }
 
 @media (max-width: 639px) {
-
-  .tm-sellers-page {
-
-    .tm-sellers-heading {
-      padding: 60px;
-    }
-
-    .tm-sellers-content {
-      padding: 40px 20px;
-
-      > *:first-child {
-        margin-bottom: 40px;
-      }
-    }
-
-    .uk-button {
-      line-height: 33px;
-      padding: 0 20px;
-      font-size: 16px;
-    }
-
-    h1 {
-      font-size: 30px;
-      margin-bottom: 40px;
-    }
-
-    h3 {
-      font-size: 18px;
-      text-align: center;
-    }
-
-    p {
-      font-size: 14px;
-    }
-  }
 
   .tm-cart-page {
 
@@ -884,6 +799,8 @@
     }
   }
 }
+
+
 
 .tm-platforms {
   background: radial-gradient(circle at center, #0a5b9e 0%, #002455 100%) #002455;
@@ -1488,6 +1405,60 @@
   }
 }
 
+// Sellers page
+
+.tm-sellers {
+  background-color: rgba(0,23,50,0.3);
+
+  &__heading {
+    position: relative;
+    padding: 120px 60px;
+    background-color: rgba(0,0,0,0.15);
+  }
+
+  &__content {
+    padding: 60px;
+  }
+
+  &__title {
+    font-size: 48px;
+    margin-bottom: 75px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 50%;
+    bottom: -39px;
+    transform: translateX(-50%);
+  }
+
+  .uk-button {
+    line-height: 33px;
+    padding: 0 40px;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 639px) {
+
+  .tm-sellers {
+
+    &__heading,
+    &__content {
+      padding: 60px 20px;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .uk-button {
+      padding: 0 20px;
+    }
+  }
+}
 
 
 
