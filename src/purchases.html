@@ -752,14 +752,62 @@
         <form action="/">
             <div class="uk-margin-small">
                 <div class="uk-inline uk-width-1-1">
-                    <span class="uk-form-icon"><i class="fas fa-user"></i></span>
-                    <input class="uk-input uk-form-large" type="text" placeholder="English">
+                    <span class="uk-form-icon"><i class="fas fa-globe"></i></span>
+                    <div class="tm-select">
+
+                        <div class="select-wrapper">
+                            <input name="language" id="selectedLanguage"
+                                   value="" hidden/>
+                            <div class="select-trigger">
+                                English
+                            </div>
+                            <div class="select-dropdown"
+                                 data-uk-dropdown="mode: click; delay-hide: 50">
+                                <div class="select-option option-selected"
+                                     data-value="1">
+                                    English
+                                </div>
+                                <div class="select-option"
+                                     data-value="2">
+                                    Russian
+                                </div>
+                                <div class="select-option"
+                                     data-value="3">
+                                    Albanian
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="uk-margin-small">
                 <div class="uk-inline uk-width-1-1">
-                    <span class="uk-form-icon"><i class="fas fa-unlock"></i></span>
-                    <input class="uk-input uk-form-large" type="text" placeholder="USD">
+                    <span class="uk-form-icon"><i class="fas fa-euro-sign"></i></span>
+                    <div class="tm-select">
+
+                        <div class="select-wrapper">
+                            <input name="currency" id="selectedCurrency"
+                                   value="" hidden/>
+                            <div class="select-trigger">
+                                USD
+                            </div>
+                            <div class="select-dropdown"
+                                 data-uk-dropdown="mode: click; delay-hide: 50">
+                                <div class="select-option option-selected"
+                                     data-value="1">
+                                    USD
+                                </div>
+                                <div class="select-option"
+                                     data-value="2">
+                                    RUB
+                                </div>
+                                <div class="select-option"
+                                     data-value="3">
+                                    ALL
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="uk-margin-top">

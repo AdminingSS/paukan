@@ -227,6 +227,10 @@
     border-left: 9px solid #29b474;
     content: '';
   }
+
+  &:hover::after {
+    border-left-color: darken(#29b474, 10%);
+  }
 }
 
 .tm-checkout {
@@ -234,12 +238,14 @@
   background: #29b474;
   line-height: 22px;
   padding: 0 5px 0 10px;
-  color: #fff;
+  color: #fff!important;
   font-size: 12px;
   border-radius: 3px 0 0 3px;
+  margin-right: 10px;
 
   &:hover {
     text-decoration: none;
+    background: darken(#29b474, 10%);
   }
 }
 
@@ -438,6 +444,94 @@
         border-radius: 2px;
 
         background-color: #fff;
+      }
+    }
+  }
+}
+
+.tm-select {
+  margin-right: 5px;
+  font-size: 12px;
+
+  .uk-dropdown {
+    min-width: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .select-wrapper {
+    position: relative;
+    //width: 96px;
+    //text-transform: uppercase;
+    cursor: pointer;
+    height: 45px;
+    font-size: 14px;
+    color: #757575;
+    border: 1px solid #c9c9c9;
+    transition: 0.2s ease-in-out;
+    transition-property: color, background-color, border;
+
+    &:active, &:hover {
+      outline: none;
+      color: #757575;
+      border-color: #fa952a;
+    }
+
+    .select-trigger {
+      position: relative;
+      background: transparent;
+      //border: 1px solid #e5e5e5;
+      height: 43px;
+      border-radius: 3px;
+      line-height: 43px;
+      padding: 0 40px;
+      text-transform: uppercase;
+
+      &::before {
+        position: absolute;
+        display: block;
+        top: 4px;
+        right: 16px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 40px;
+        content: '\f078';
+        color: #000;
+      }
+
+      &.uk-open::before {
+        content: '\f077';
+      }
+    }
+
+    .select-dropdown {
+      background: #fff;
+      width: 100%;
+      max-height: 250px;
+      overflow-y: auto;
+      //min-width: 96px;
+      border: 1px solid #e5e5e5;
+      border-radius: 3px;
+      margin: 0;
+
+      line-height: 40px;
+      color: rgba(51, 51, 51, 0.6);
+
+      .select-option {
+        padding: 0 10px;
+        height: 38px;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: darken(#ffffff, 5%);
+        }
+
+        .option-disabled {
+          color: #e5e5e5;
+        }
       }
     }
   }
