@@ -1313,27 +1313,33 @@
   min-height: 250px;
   overflow-x: auto;
 
-  .tm-purchase-hover {
-    button {
-      display: none;
-      width: 160px;
-      max-width: 100%;
-    }
-
-    &:hover {
-      padding-top: 5px;
-      padding-bottom: 5px;
-
-      span {
-        display: none;
-      }
-
-      button {
-        display: block;
-      }
-    }
-
+  button {
+    width: 160px;
+    max-width: 100%;
+    margin-bottom: 3px;
   }
+
+  //.tm-purchase-hover {
+  //  button {
+  //    display: none;
+  //    width: 160px;
+  //    max-width: 100%;
+  //  }
+  //
+  //  &:hover {
+  //    padding-top: 5px;
+  //    padding-bottom: 5px;
+  //
+  //    span {
+  //      display: none;
+  //    }
+  //
+  //    button {
+  //      display: block;
+  //    }
+  //  }
+  //
+  //}
 
   table {
     width: 100%;
@@ -1352,8 +1358,13 @@
     }
 
     td {
-      padding: 10px;
+      padding: 0 10px;
       font-size: 14px;
+      line-height: 40px;
+
+      img {
+        width: 30px;
+      }
     }
 
     tr:last-child {
