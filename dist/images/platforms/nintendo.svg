@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   width="104.996mm"
+   height="104.996mm"
+   version="1.1"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 1166.4823 1204"
+   id="svg13"
+   sodipodi:docname="игровые сервисы_4.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata17"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="721"
+   inkscape:window-height="480"
+   id="namedview15"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="0.1486763"
+   inkscape:cx="487.9636"
+   inkscape:cy="-346.96285"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="svg13" />
+ <defs
+   id="defs4">
+  <style
+   type="text/css"
+   id="style2">
+   <![CDATA[
+    .fil0 {fill:#C62C32}
+    .fil1 {fill:#FEFEFE;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g
+   id="Слой_x0020_1"
+   transform="translate(-18.75885)">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  <g
+   id="_771157936">
+   <circle
+   class="fil0"
+   cx="602"
+   cy="602"
+   r="602"
+   id="circle7"
+   style="fill:#c62c32" />
+   <path
+   class="fil1"
+   d="m 678,284 h 137 c 33,0 63,14 85,35 21,22 35,52 35,85 v 396 c 0,33 -14,63 -35,84 -22,22 -52,35 -85,35 H 658 V 284 Z m -290,0 H 590 V 919 H 388 c -32,0 -62,-13 -84,-35 -22,-21 -35,-51 -35,-84 V 404 c 0,-33 13,-63 35,-85 22,-21 52,-35 84,-35 z m 44,123 c 32,0 58,26 58,58 0,33 -26,59 -58,59 -33,0 -59,-26 -59,-59 0,-32 26,-58 59,-58 z M 550,324 H 388 c -22,0 -42,9 -56,23 -15,15 -24,35 -24,57 v 396 c 0,22 9,42 24,57 14,14 34,23 56,23 h 162 z m 235,253 c -32,0 -59,27 -59,59 0,32 27,59 59,59 32,0 59,-27 59,-59 0,-32 -27,-59 -59,-59 z"
+   id="path9"
+   inkscape:connector-curvature="0"
+   style="fill:#fefefe;fill-rule:nonzero" />
+  </g>
+ </g>
+</svg>
