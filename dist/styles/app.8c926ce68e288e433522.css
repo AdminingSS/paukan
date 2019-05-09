@@ -13293,6 +13293,9 @@ iframe.uk-cover {
 .uk-text-bold {
   font-weight: 600;
 }
+.uk-offcanvas-container .uk-navbar-toggle {
+  opacity: 0;
+}
 .uk-offcanvas-bar {
   padding-top: 52px;
   font-size: 11px;
