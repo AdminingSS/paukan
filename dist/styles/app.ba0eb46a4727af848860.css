@@ -14143,7 +14143,7 @@ iframe.uk-cover {
 .tm-product-page {
   line-height: 1.2;
   color: #dfdcdc;
-  background: url("/images/bg-swb.jpg") no-repeat center top #000;
+  background: url(../images/bg-swb.jpg) no-repeat center top #000;
 }
 .tm-product-page h1 {
   font-family: 'Informa Pro Light';
