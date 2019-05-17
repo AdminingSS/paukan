@@ -8,6 +8,7 @@ $(()=>{
     (() => {
         const $scrollContainer = $('.js-scroll');
         const $scrollXContainer = $('.js-scroll-x');
+        const $scrollOutContainer = $('.js-scroll-out');
 
         $scrollContainer.mCustomScrollbar({
             mouseWheel:{ enable: true }
@@ -17,6 +18,12 @@ $(()=>{
             axis:"x",
             mouseWheel:{ enable: true },
             advanced:{ autoExpandHorizontalScroll:true }
+        });
+
+        $scrollOutContainer.mCustomScrollbar({
+            scrollbarPosition: "outside",
+            alwaysShowScrollbar: 2,
+            mouseWheel:{ enable: true }
         });
     })();
 });

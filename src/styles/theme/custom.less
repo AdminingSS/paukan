@@ -1577,3 +1577,206 @@ input.tm-cart-quantity, input.tm-input-discount {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
+
+.tm-account, .tm-contact, .tm-support-main, .tm-support-form {
+  background-color: rgba(0, 23, 50, 0.3);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 25px 45px 50px 10px;
+
+  .uk-input {
+    background-color: transparent;
+    height: 33px;
+    border-radius: 2px;
+    border-color: #67839d;
+
+    &::placeholder {
+      color: #6387a9;
+    }
+  }
+
+  .uk-button {
+    line-height: 33px;
+    padding: 0 75px;
+    font-size: 16px;
+  }
+
+  .uk-textarea {
+    background-color: transparent;
+    height: 180px;
+    border-radius: 2px;
+    border-color: #67839d;
+
+    &::placeholder {
+      color: #6387a9;
+    }
+  }
+}
+
+.tm-asterix {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: '\f069';
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    
+    top: 10px;
+    right: -20px;
+  }
+}
+
+.tm-contact {
+  padding: 30px 40px 10px;
+}
+
+.tm-support-main {
+  padding: 10px 10px 40px;
+
+  .tm-chat {
+    border: 2px solid #67839d;
+    border-radius: 2px;
+  }
+
+  .tm-chat-body {
+    position: relative;
+    padding: 10px 25px 0 10px;
+    height: 450px;
+    min-height: 450px;
+    max-height: 450px;
+
+    > * {
+      overflow: hidden;
+      max-height: 100%;
+      height: 100%;
+      min-height: 100%;
+    }
+
+    .mCSB_scrollTools {
+      right: -25px;
+      background-color: rgba(0, 23, 50, 0.3);
+      border-radius: 5px 5px 0 0;
+    }
+  }
+
+  .tm-chat-message {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+
+    &-left {
+      align-items: flex-start;
+
+      .tm-chat-message-body {
+        margin-left: 5px;
+
+        &::before {
+          position: absolute;
+          display: block;
+          content: '';
+          top: 0;
+          left: -5px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 5px 5px 0;
+          border-color: transparent #2c5885 transparent transparent;
+        }
+      }
+    }
+
+    &-right {
+      align-items: flex-end;
+
+      .tm-chat-message-user {
+        text-align: right;
+      }
+
+      .tm-chat-message-body {
+        margin-right: 5px;
+
+        &::before {
+          position: absolute;
+          display: block;
+          content: '';
+          top: 0;
+          right: -5px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 5px 5px 0 0;
+          border-color: #2c5885 transparent transparent transparent;
+        }
+      }
+    }
+
+    .tm-chat-message-user {
+      margin-bottom: 5px;
+    }
+
+    .tm-chat-message-body {
+      position: relative;
+      width: 45%;
+      padding: 5px;
+      background-color: #2c5885;
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .tm-chat-control {
+    background-color: rgba(0, 23, 50, 0.3);
+    padding: 5px 10px;
+
+    .uk-textarea {
+      color: rgba(255, 255, 255, 0.7);
+      background-color: #164A7A;
+      height: 60px;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+
+    .tm-chat-button {
+      height: 40px;
+      width: 40px;
+      border: none;
+      line-height: 40px;
+      padding: 0;
+      background-color: #2aa1e0;
+      border-radius: 50%;
+    }
+  }
+}
+
+.tm-support-form {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 639px) {
+  .tm-account {
+    padding-left: 15px;
+  }
+
+  .tm-block-sm {
+    display: block;
+  }
+
+  .tm-margin-small-bottom-sm {
+    margin-bottom: 10px;
+  }
+
+  .tm-support-form {
+    padding: 25px 30px 20px 30px;
+  }
+
+  .tm-support-main .tm-chat-message .tm-chat-message-body {
+    width: 90%;
+  }
+}
