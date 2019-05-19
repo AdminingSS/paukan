@@ -1597,6 +1597,7 @@ input.tm-cart-quantity, input.tm-input-discount {
     height: 33px;
     border-radius: 2px;
     border-color: #67839d;
+    color: #ffffff;
 
     &::placeholder {
       color: #6387a9;
@@ -1742,9 +1743,12 @@ input.tm-cart-quantity, input.tm-input-discount {
     padding: 5px 10px;
 
     .uk-textarea {
-      color: rgba(255, 255, 255, 0.7);
+      color: #ffffff;
       background-color: #164A7A;
       height: 60px;
+      border: none;
+      outline: none;
+      resize: none;
 
       &::placeholder {
         color: rgba(255, 255, 255, 0.7);
@@ -1759,6 +1763,10 @@ input.tm-cart-quantity, input.tm-input-discount {
       padding: 0;
       background-color: #2aa1e0;
       border-radius: 50%;
+
+      &:hover, &:active {
+        transform: scale(1.05);
+      }
     }
   }
 }
