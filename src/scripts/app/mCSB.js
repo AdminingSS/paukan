@@ -22,7 +22,7 @@ $(()=>{
 
         $scrollOutContainer.mCustomScrollbar({
             scrollbarPosition: "outside",
-            alwaysShowScrollbar: 2,
+            alwaysShowScrollbar: 0,
             mouseWheel:{ enable: true }
         });
     })();

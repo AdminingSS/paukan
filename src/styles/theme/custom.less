@@ -775,6 +775,18 @@
   }
 }
 
+.tm-textarea-spinner {
+  position: relative;
+
+  &.ajax {
+    color: transparent;
+
+    .tm-spinner {
+      display: flex;
+    }
+  }
+}
+
 .tm-button-more {
   position: relative;
   opacity: 0.8;
@@ -1481,6 +1493,8 @@
   border: 1px solid @global-primary-background;
   background: transparent; //rgba(0, 23, 50, 0.4);
   color: #ffffff;
+  outline: none;
+  margin: 0;
 
   &::placeholder {
     color: #6387a9;
@@ -1527,7 +1541,7 @@
   display: inline-block;
   height: 19px;
   width: 19px;
-  line-height: 2;
+  line-height: 1;
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -1615,6 +1629,7 @@ input.tm-cart-quantity, input.tm-input-discount {
     height: 180px;
     border-radius: 2px;
     border-color: #67839d;
+    color: #ffffff;
 
     &::placeholder {
       color: #6387a9;
@@ -1653,7 +1668,7 @@ input.tm-cart-quantity, input.tm-input-discount {
 
   .tm-chat-body {
     position: relative;
-    padding: 10px 25px 0 10px;
+    padding: 15px 20px 0 15px;
     height: 450px;
     min-height: 450px;
     max-height: 450px;
@@ -1666,9 +1681,12 @@ input.tm-cart-quantity, input.tm-input-discount {
     }
 
     .mCSB_scrollTools {
-      right: -25px;
+      right: -20px;
+      top: -15px;
+      height: 465px;
       background-color: rgba(0, 23, 50, 0.3);
-      border-radius: 5px 5px 0 0;
+      border-radius: 0;
+      width: 10px;
     }
   }
 
@@ -1681,18 +1699,18 @@ input.tm-cart-quantity, input.tm-input-discount {
       align-items: flex-start;
 
       .tm-chat-message-body {
-        margin-left: 5px;
+        margin-left: 10px;
 
         &::before {
           position: absolute;
           display: block;
           content: '';
           top: 0;
-          left: -5px;
+          left: -10px;
           width: 0;
           height: 0;
           border-style: solid;
-          border-width: 0 5px 5px 0;
+          border-width: 0 10px 10px 0;
           border-color: transparent #2c5885 transparent transparent;
         }
       }
@@ -1706,18 +1724,18 @@ input.tm-cart-quantity, input.tm-input-discount {
       }
 
       .tm-chat-message-body {
-        margin-right: 5px;
+        margin-right: 10px;
 
         &::before {
           position: absolute;
           display: block;
           content: '';
           top: 0;
-          right: -5px;
+          right: -10px;
           width: 0;
           height: 0;
           border-style: solid;
-          border-width: 5px 5px 0 0;
+          border-width: 10px 10px 0 0;
           border-color: #2c5885 transparent transparent transparent;
         }
       }
@@ -1790,6 +1808,16 @@ input.tm-cart-quantity, input.tm-input-discount {
 
   .tm-support-form {
     padding: 25px 30px 20px 30px;
+  }
+
+  .tm-support-main .tm-chat-body {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+
+  .tm-support-main .tm-chat-body .mCSB_scrollTools {
+    height: 315px;
   }
 
   .tm-support-main .tm-chat-message .tm-chat-message-body {
